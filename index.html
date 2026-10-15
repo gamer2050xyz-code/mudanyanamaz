@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f6b4f">
+<meta name="description" content="Bursa Mudanya namaz vakitleri">
+<title>Mudanya Namaz Vakitleri</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Mudanya · Bursa</h1>
+<div class="hero"><small id="lbl">Sıradaki vakit</small><div class="n" id="nx">–</div><div class="t" id="cd">--:--:--</div></div>
+<div class="nav"><button id="pv" aria-label="Önceki gün">‹</button><b id="dt"></b><button id="nt" aria-label="Sonraki gün">›</button></div>
+<div class="list" id="ls"></div>
+<button class="today" id="td">Bugüne dön</button>
+<p class="src" id="sr"></p>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(function(){});</script>
+</body>
+</html>
